@@ -13,8 +13,8 @@ app.use('/v1',router);
 
 mongoose.connect(process.env.MONGODB_URL).then(()=>{
 console.log("DB connected sucessfully");
-app.listen(process.env.NODE_ENV,()=>{
-    console.log("Server Sucessfully started on "+process.env.NODE_ENV);
+app.listen(8082,()=>{
+    console.log("Server Sucessfully started on "+8082);
 })
 }).catch((err)=>{
     console.log("DB failed to connect"+err);
